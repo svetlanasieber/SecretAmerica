@@ -5,7 +5,7 @@ import softuni.exam.models.entity.Country;
 
 import java.util.Optional;
 
-//ToDo:
+
 public interface CountryRepository extends JpaRepository<Country, Long> {
 
     Optional<Country> findCountryByName(String name);
