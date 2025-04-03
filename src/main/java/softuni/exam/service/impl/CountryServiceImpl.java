@@ -15,7 +15,7 @@ import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.Optional;
 
-//ToDo - Implement all the methods
+
 @Service
 public class CountryServiceImpl implements CountryService {
 
@@ -73,7 +73,4 @@ public class CountryServiceImpl implements CountryService {
         return build.toString();
     }
 
-//    public Optional<Country> getCountryById(Long countryId) {
-//        return countryRepository.findById(countryId);
-//    }
 }
