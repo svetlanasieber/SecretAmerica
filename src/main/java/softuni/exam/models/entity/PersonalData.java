@@ -52,12 +52,5 @@ public class PersonalData extends BaseEntity{
         this.cardNumber = cardNumber;
     }
 
-//    @OneToOne(mappedBy = "personal_data_id")
-//    public Visitor getVisitor() {
-//        return visitor;
-//    }
-//
-//    public void setVisitor(Visitor visitor) {
-//        this.visitor = visitor;
-//    }
+
 }
