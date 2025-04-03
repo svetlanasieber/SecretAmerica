@@ -11,11 +11,6 @@ public class SecretAmericaApplication {
 
     public static void main(String[] args) {
 
-//        SpringApplication application = new SpringApplication(SecretAmericaApplication.class);
-//
-//        application.addInitializers((GenericApplicationContext context) ->
-//                context.registerBean(FileUtil.class, FileUtilImpl::new));
-
         SpringApplication.run(SecretAmericaApplication.class, args);
     }
 
