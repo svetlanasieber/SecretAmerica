@@ -43,14 +43,5 @@ public class Country extends BaseEntity {
     public void setAttractions(Set<Attraction> attractions) {
         this.attractions = attractions;
     }
-//
-//
-//    @OneToMany(mappedBy = "country", fetch = FetchType.EAGER)
-//    public Set<Visitor> getVisitors() {
-//        return visitors;
-//    }
-//
-//    public void setVisitors(Set<Visitor> visitors) {
-//        this.visitors = visitors;
-//    }
+
 }
