@@ -22,7 +22,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-//ToDo - Implement all the methods
+
 @Service
 @Configuration
 public class AttractionServiceImpl implements AttractionService {
@@ -92,11 +92,7 @@ public class AttractionServiceImpl implements AttractionService {
                 .map(attractionDTO -> {
                     Attraction attraction = modelMapper.map(attractionDTO, Attraction.class);
 
-//                    Optional<Country> country = countryRepository.findById(attractionDTO.getCountry());
                     Country country = countryRepository.findCountryById(attractionDTO.getCountry());
-//                    Country country = countryService.getCountryById(attractionDTO.getCountry()).orElse(null);
-//                    assert country.isPresent();
-//                    country.get().getAttractions().add(attraction);
                     Visitor visitor = visitorRepository.findVisitorById(attractionDTO.getVisitor());
 
                     attraction.setCountry(country);
@@ -120,9 +116,7 @@ public class AttractionServiceImpl implements AttractionService {
                 .findAttractionByTypeAndElevationMoreThanOrEqualTo300();
 
         foundAttractions.forEach(a -> {
-//            build.append(String.format("Attraction with ID%d:\n" +
-//                                    "***%s - %s" +
-//                                    " at an altitude of %dm. somewhere in %s.",
+
             build.append(String.format("""
                                     Attraction with ID%d:
                                     ***%s - %s at an altitude of %dm. somewhere in %s.""",
