@@ -7,7 +7,7 @@ import softuni.exam.models.entity.Attraction;
 import java.util.List;
 import java.util.Optional;
 
-//ToDo:
+
 public interface AttractionRepository extends JpaRepository<Attraction, Long> {
 
     Optional<Attraction> findAttractionByName(String name);
