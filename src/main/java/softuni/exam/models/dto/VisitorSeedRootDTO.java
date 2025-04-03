@@ -12,13 +12,12 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 
 import java.util.List;
 
-//@JacksonXmlRootElement(localName = "visitors")
-//@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+
 @XmlRootElement(name = "visitors")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class VisitorSeedRootDTO {
 
-//    @JacksonXmlElementWrapper(useWrapping = false)
+
     @XmlElement(name = "visitor")
     private List<VisitorSeedDTO> visitorSeedDTOS;
 
