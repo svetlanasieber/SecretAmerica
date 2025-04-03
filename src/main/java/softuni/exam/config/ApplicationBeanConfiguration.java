@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import softuni.exam.util.FileUtil;
 import softuni.exam.util.FileUtilImpl;
 
-//ToDo Create configurations
+
 
 @Configuration
 public class ApplicationBeanConfiguration {
